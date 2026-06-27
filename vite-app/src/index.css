@@ -351,7 +351,7 @@ ul {
 
 /* CATEGORIES SECTION */
 .categories-section {
-    padding: 80px 20px;
+    padding: 40px 20px;
     background-color: var(--bg-light);
     text-align: center;
 }
@@ -456,7 +456,7 @@ ul {
 
 /* INFO SPLIT SECTION */
 .info-split-section {
-    padding: 40px 20px 80px;
+    padding: 20px 20px 40px;
     background-color: var(--bg-light);
 }
 
@@ -553,7 +553,7 @@ ul {
 
 /* FEATURED PRODUCTS */
 .featured-products-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: var(--bg-light);
     text-align: center;
 }
@@ -637,7 +637,7 @@ ul {
 /* GLOBAL SHIPPING */
 .global-shipping-section {
     background-color: var(--bg-dark);
-    padding: 100px 20px;
+    padding: 60px 20px;
     color: var(--text-white);
     position: relative;
     overflow: hidden;
@@ -722,7 +722,7 @@ ul {
 /* ABOUT US */
 .about-us-section {
     background-color: var(--bg-white);
-    padding: 80px 20px;
+    padding: 50px 20px;
 }
 
 .about-container {
@@ -798,7 +798,7 @@ ul {
 .footer {
     background-color: var(--bg-darker);
     color: var(--text-white);
-    padding: 60px 20px 20px;
+    padding: 40px 20px 20px;
     border-top: 1px solid var(--border-color);
 }
 
