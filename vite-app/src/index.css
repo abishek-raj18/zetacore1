@@ -636,23 +636,22 @@ ul {
 
 /* GLOBAL SHIPPING */
 .global-shipping-section {
-    background-color: var(--bg-dark);
+    background-color: #021e3b;
     padding: 60px 20px;
     color: var(--text-white);
     position: relative;
     overflow: hidden;
     z-index: 1;
-    box-shadow: inset 0 0 100px 40px rgba(4, 8, 16, 0.95);
 }
 
 .global-shipping-section::after {
     content: '';
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background-image: url('/assets/Global shipping.webp');
+    background-image: url('/assets/Global shipping_final.jpg');
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: left center;
     z-index: -2;
 }
 
@@ -661,7 +660,7 @@ ul {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at center, rgba(4, 8, 16, 0.3) 20%, rgba(4, 8, 16, 0.95) 90%);
+    background: rgba(4, 8, 16, 0.7); /* Dark overlay */
     z-index: -1;
 }
 
