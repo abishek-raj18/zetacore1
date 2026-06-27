@@ -18,8 +18,7 @@ async function splitImage() {
 
   for (let i = 0; i < 4; i++) {
     await sharp(imagePath)
-      .extract({ left: i * sectionWidth, top: 0, width: sectionWidth, height: metadata.height })
-      .trim()
+      .extract({ left: i * sectionWidth, top: 800, width: sectionWidth, height: sectionWidth })
       .toFile(outputs[i]);
     console.log(`Saved ${outputs[i]}`);
   }

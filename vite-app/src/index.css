@@ -268,11 +268,10 @@ ul {
 }
 
 .feature-item img {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     opacity: 0.9;
-    object-fit: cover;
-    transform: scale(1.2);
+    object-fit: contain;
     margin-right: 5px;
     margin-left: 5px;
 }
