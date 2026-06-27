@@ -952,46 +952,79 @@ ul {
     transform: translateY(-3px);
 }
 
-/* Responsive basics */
+/* Responsive design updates for all devices */
 @media (max-width: 1024px) {
-
-    .categories-grid,
-    .featured-grid,
-    .industries-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .logo img {
+        transform: scale(1.15);
     }
 
-    .info-container,
-    .global-container,
-    .about-container {
-        grid-template-columns: 1fr;
+    .hero {
+        height: auto;
+        min-height: 600px;
+        padding-top: 120px;
+        padding-bottom: 60px;
     }
 
-    .footer-top {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
-    .categories-grid,
-    .featured-grid,
-    .features-grid,
-    .industries-grid,
-    .countries-grid {
+    .hero-features {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .search-bar-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .search-label {
+        text-align: center;
+    }
+
+    .search-tags {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-container {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-img, .about-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .global-container {
+        justify-content: center;
+    }
+
+    .global-content {
+        flex: 0 0 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .countries-grid {
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .footer-top {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-links,
-    .nav-actions {
-        display: none;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1015,6 +1048,89 @@ ul {
 @media (max-width: 768px) {
     .desktop-br {
         display: none;
+    }
+
+    .logo img {
+        height: 50px;
+        transform: scale(1.1);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .feature-item {
+        font-size: 12px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px 10px;
+    }
+
+    .countries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-trust {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+        padding: 20px 10px;
+    }
+
+    .trust-item {
+        flex: 0 0 calc(50% - 15px);
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-legal {
+        margin-bottom: 10px;
+    }
+
+    .footer-legal a {
+        margin: 0 10px;
     }
 
     .mobile-menu-btn {
@@ -1050,8 +1166,59 @@ ul {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    .mobile-nav-actions .btn {
+        width: 100%;
+    }
+
     .nav-actions {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 42px;
+        transform: scale(1);
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero-features {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .countries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-item {
+        flex: 0 0 100%;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 28px;
     }
 }
 
